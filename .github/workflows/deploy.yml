@@ -40,5 +40,4 @@ jobs:
 
             # Optional: If you want to ensure your app keeps running after reboots
             pm2 save
-            pm2 startup
           EOF
