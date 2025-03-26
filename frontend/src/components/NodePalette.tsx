@@ -68,7 +68,7 @@ const NodePalette: React.FC = () => {
         expanded ? 'block' : 'hidden', // Use hidden instead of opacity-0
         'p-4' // Add padding for content
       )}>
-        <h3 className="text-sm font-medium mb-3">Node Types</h3>
+        <h3 className="text-sm font-medium mb-3">Node Types ::</h3>
         <div className="space-y-3">
           {nodeTemplates.map((template) => (
             <div
