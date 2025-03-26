@@ -3,7 +3,7 @@ name: Deploy to EC2
 on:
   push:
     branches:
-      - master
+      - master  
 
 jobs:
   deploy:
@@ -26,8 +26,19 @@ jobs:
       - name: Deploy to EC2
         run: |
           ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no -p ${{ secrets.EC2_SSH_PORT }} ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
+            # Navigate to the project directory
             cd ~/workflow/frontend
-            git pull origin main
+
+            # Pull the latest changes from the master branch
+            git pull origin master  # or main
+
+            # Install any new dependencies
             npm install
+
+            # Restart the app using PM2
             pm2 restart workflow
+
+            # Optional: If you want to ensure your app keeps running after reboots
+            pm2 save
+            pm2 startup
           EOF
