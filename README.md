@@ -18,5 +18,5 @@ npm run dev
 ```
 
 ---
-## Live: https://ec2-13-51-160-89.eu-north-1.compute.amazonaws.com/
+## Live: http://ec2-13-51-160-89.eu-north-1.compute.amazonaws.com
 
