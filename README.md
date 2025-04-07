@@ -1,6 +1,6 @@
 # Workflow Builder
 
-A simple drag-and-drop workflow builder application built with **React**, **TypeScript**, and **Vite**. This project uses `@xyflow/react` to create a dynamic interface where users can design custom workflows by dragging, dropping, and connecting nodes. The application supports node management, state persistence using `localStorage`, and a responsive design.
+A simple drag-and-drop workflow builder application built with **React**, **TypeScript**. This project uses `@xyflow/react` to create a dynamic interface where users can design custom workflows by dragging, dropping, and connecting nodes. The application supports node management, state persistence using `localStorage`, and a responsive design.
 
 ---
 
