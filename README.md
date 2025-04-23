@@ -18,5 +18,5 @@ npm run dev
 ```
 
 ---
-## Live: http://ec2-13-51-160-89.eu-north-1.compute.amazonaws.com
+## Live: https://inquisitive-cajeta-e49611.netlify.app
 
